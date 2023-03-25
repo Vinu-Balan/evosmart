@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<!--
+	Directive by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html onmousemove="moveLogo(event)">
+	<head>
+		<title>EVOSMART</title>
+		<link rel="icon" href="./images/evosmart-logo.ico" type="image/x-icon"/>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		
+	</head>
+	<body class="is-preload">
+		<div id="cursor"></div>
+		<script>
+			document.addEventListener("mousemove", function(event) {
+			const x = event.pageX - 10;
+			const y = event.pageY - 10;
+			const cursor = document.querySelector("#cursor");
+			cursor.style.left = x + "px";
+			cursor.style.top = y + "px";
+			});
+			// var x = document.getElementById("home-logo");
+			// x.addEventListener("mousemove",moveLogo(x));
+			function moveLogo(event){
+				let x = document.getElementById("home-logo");
+				xc = event.clientX;
+				yc = event.clientY;
+				xe = x.clientLeft;
+				x.style.height = `${Math.abs(xc-xe)/50}vh`;
+				x.style.marginTop = `${(yc-200)/100}%`;
+			}
+		</script>
+		<!-- Navbar -->
+		<div style="width:100%;background-color: black;color: #ffff;height: 50px;position: fixed;top: 0%;z-index: 4;display: flex;flex-direction: row;justify-content: space-between;">
+			<img  src="./images/evosmart-text-logo.png" height="50px" />
+			<div class="menu">
+				<ul style="display: flex;flex-direction: row;">
+					<li class="menu-items" style="margin:5px;margin-left: 10px;margin-right: 10px;cursor: pointer;"><a href="#about" style="color:#ffff">About</a></li>
+					<li class="menu-items" style="margin:5px;margin-left: 10px;margin-right: 10px;cursor: pointer;"><a style="color:#ffff" href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		<!-- Header -->
+			<div id="header">
+				<img style="min-height: 15vh;" id="home-logo" src="./images/evosmart-logo.png" alt="logo" height="150vh" />
+				<h1 id="heading">EVOSMART SHOWS THE FUTURE</h1>
+				<p>Get connected with EVOSMART to level up your enterprise</p>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<header class="major container medium">
+					<h2>We conduct experiments that
+					<br />
+					may or may not seriously
+					<br />
+					break the universe</h2>
+					<!--
+					<p>Tellus erat mauris ipsum fermentum<br />
+					etiam vivamus nunc nibh morbi.</p>
+					-->
+				</header>
+
+				<div id="about" class="box alt container">
+					<section class="feature left">
+						<a href="#" class="image icon solid fa-signal"><img src="images/pic01.jpg" alt="" /></a>
+						<div class="content">
+							<h3>OUR MISSION</h3>
+							<p>Huge number of IT based companies ought to make products that are reachable only for High level companies, but our mission is to make IT based products for every company and individual. We try to indulge our idea to modernize a sector.</p>
+						</div>
+					</section>
+					<section class="feature right">
+						<a href="#" class="image icon solid fa-code"><img src="images/pic02.jpg" alt="" /></a>
+						<div class="content">
+							<h3>WHY EVOSMART?</h3>
+							<p>EVOSMART focuses mainly on bringing a futuristic revolution in every sector. We make the products with reasonable charges less than any other companies out in the market. Customer satisfaction is the only goal that we rely on. Young aspirants in our company are ready to deploy their brains in your futuristic product.</p>
+						</div>
+					</section>
+					<section class="feature left">
+						<a href="#" class="image icon solid fa-mobile-alt"><img src="images/pic03.jpg" alt="" /></a>
+						<div class="content">
+							<h3>What to expect from EVOSMART?</h3>
+							<p>EVOSMART has skillfull employees especially trained to build software as well as hardware products as per the company or any individual's requirement. You can expect a user friendly service from us. We never fail to dissapoint our customers.</p>
+						</div>
+					</section>
+				</div>
+
+				<footer class="major container medium">
+					<h3>Get shady with Technology</h3>
+					<p>Having an unquenchable thirst for developing futuristic products?.</p>
+					<ul class="actions special">
+						<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdD33qsWfX9YrZylmR6qtdE3GV-6nB1vvkEcO2v6m0B-m3cWA/viewform?usp=sf_link" target="blank" class="button">Join our crew</a></li>
+					</ul>
+				</footer>
+
+			</div>
+
+		<!-- Footer -->
+		<script>
+			
+		</script>
+			<div id="footer">
+				<div class="container medium">
+
+					<header class="major last">
+						<h2>Questions or comments?</h2>
+					</header>
+
+					<p>We are open to questions and feedbacks. Please give your opinion about us.</p>
+
+					<form id="queryform" action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSfCyrdEA-IRbgIvHqIT-1M91rwXE3f3dzVfphGXuj7CSgZSIw/formResponse" method="post" target="blank">
+						<div class="row">
+							<div class="col-6 col-12-mobilep">
+								<input type="text" name="entry.2005620554" jsname="YPqjbf" placeholder="Name" />
+							</div>
+							<div class="col-6 col-12-mobilep">
+								<input type="email" name="entry.1045781291" jsname="YPqjbf" placeholder="Email" />
+							</div>
+							<div class="col-12">
+								<textarea name="entry.839337160" placeholder="Message" rows="6"></textarea>
+							</div>
+							<div class="col-12">
+								<ul class="actions special">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+
+					<ul id="contact" class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; EVOSMART All rights reserved.</li><li>Design: <a href="https://github.com/Vinu-Balan">Vinu Balan J</a></li>
+					</ul>
+
+				</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
